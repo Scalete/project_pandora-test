@@ -1,0 +1,11 @@
+@import 'core/index';
+
+@import 'blocks/index';
+
+body {
+    font-family: $font-pan;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.3;
+    color: $color-brand-black;
+}
