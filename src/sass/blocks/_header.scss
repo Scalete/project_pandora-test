@@ -1,3 +1,107 @@
 .header {
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: res(10, 14) res(14, 58) res(14, 10);
+    border-bottom: 5px solid $color-brand-pink;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+
+        li {
+            margin-right: res(27, 20);
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            > a > img {
+                transition: transform $fast;
+
+                @include hover {
+                    transform: translateY(-3px);
+                }
+            }
+        }
+    }
+
+    &__search {
+        position: relative;
+
+        input {
+            width: 241px;
+            height: 41px;
+            padding: 8px 20px 7px 40px;
+            border: 1px solid $color-brand-light-gray;
+            transition: border $fast;
+
+            &::placeholder {
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 1.36;
+                letter-spacing: 0.155em;
+                text-transform: uppercase;
+                color: $color-brand-gray;
+            }
+
+            &:focus {
+                outline: none;
+                border: 1px solid $color-brand-black;
+            }
+
+            + img {
+                position: absolute;
+                left: 6px;
+                top: 7px;
+            }
+        }
+    }
+
+    &__mobile {
+        display: none;
+    }
+
+    &__logo {
+        transform: translateY(-6px);
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 26px;
+        height: 26px;
+        padding: 6px 2px;
+        margin-right: 15px;
+        cursor: pointer;
+
+        span {
+            width: 100%;
+            height: 1px;
+            background-color: $color-brand-black;
+        }
+    }
+
+    @include mobile {
+
+        &__search {
+            input {
+                display: none;
+            }
+
+            img {
+                position: initial !important;
+                cursor: pointer;
+            }
+        }
+
+        &__mobile {
+            display: flex;
+        }
+
+        .mobile-hide {
+            display: none;
+        }
+    }
 }
