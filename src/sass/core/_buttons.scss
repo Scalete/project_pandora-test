@@ -8,6 +8,7 @@
     letter-spacing: 0.145em;
     text-align: center;
     transition: color $normal, background-color $normal;
+    cursor: pointer;
 
     &.primary {
         color: $white;

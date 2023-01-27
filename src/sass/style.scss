@@ -9,3 +9,31 @@ body {
     line-height: 1.3;
     color: $color-brand-black;
 }
+
+main {
+    position: relative;
+}
+
+aside {
+    position: fixed;
+    z-index: 2;
+    top: 35%;
+    right: -3%;
+    line-height: 1.21;
+    letter-spacing: 0.155em;
+    text-transform: uppercase;
+    transform: rotate(90deg);
+    background-color: $white;
+
+    a {
+        display: block;
+        padding: res(6, 14) res(12, 22) res(7, 11);
+        border: 1px solid $color-brand-gray;
+        border-radius: 3px;
+    }
+
+    @include mobile {
+        top: 55%;
+        right: -10%;
+    }
+}
