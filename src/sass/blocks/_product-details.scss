@@ -1,0 +1,72 @@
+.product-details {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: res(20, 30) res(15, 58) 50px;
+
+    &__content {
+        max-width: 314px;
+
+        h3 {
+            margin-bottom: res(18, 10);
+            text-align: center;
+            letter-spacing: 0.125em;
+            color: $color-brand-dark-gray;
+        }
+
+        h2 {
+            margin-bottom: res(5, 20);
+            font-weight: 700;
+            font-size: res(24, 28);
+            line-height: 1.1;
+            text-align: center;
+        }
+
+        .money {
+            font-size: res(14, 12);
+            line-height: 1.5;
+            text-align: center;
+            letter-spacing: 0.003em;
+        }
+
+        .price {
+            margin-right: res(10, 15);
+            text-decoration: line-through;
+        }
+
+        .discount {
+            color: $color-brand-red;
+        }
+
+        p {
+            margin: res(30, 21) 0 30px;
+            letter-spacing: 0.017em;
+        }
+
+        .questionnaire {
+            h4 {
+                margin-bottom: 4px;
+                font-weight: 700;
+            }
+
+            &__header {
+                margin-bottom: 20px;
+                padding-bottom: 10px;
+                border-bottom: 2px solid $color-brand-light-gray;
+            }
+
+            &__actions a:first-child{
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    @include tablet {
+        flex-direction: column;
+        align-items: center;
+
+        &__content {
+            max-width: 100%;
+        }
+    }
+}

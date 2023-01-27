@@ -1,22 +1,27 @@
 // fonts
-$font-pan            :  'Pan Display', Arial, Helvetica, sans-serif;
+$font-pan                :  'Pan Display', Arial, Helvetica, sans-serif;
 
 
 // colors
-$white                  : #FFFFFF;
-$black                  : #000000;
-$color-brand-black      : #27251F;
-$color-brand-pink       : #FFCAD4;        
-$color-brand-light-gray : #F5F5F5;
-$color-brand-gray       : #B4B4B4;
+$white                   : #FFFFFF;
+$black                   : #000000;
+$color-brand-black       : #27251F;
+$color-brand-pink        : #FFCAD4;
+$color-brand-red         : #D2255B;          
+$color-brand-light-gray  : #F5F5F5;
+$color-brand-gray        : #B4B4B4;
+$color-brand-dark-gray   : #71706C;
+
+$color-slider-dot        : #E1E1E2;
+$color-slider-dot-active : #E6A5B2;
 
 
 // transition
-$fast                   : .2s;
-$normal                 : .5s;
+$fast                    : .2s;
+$normal                  : .5s;
 
 
 // breakpoints
-$screen-sm-max          : 767px;
-$screen-mid-max         : 1024px;
-$screen-sm-min          : 1025px;
+$screen-sm-max           : 767px;
+$screen-mid-max          : 1024px;
+$screen-sm-min           : 1025px;
